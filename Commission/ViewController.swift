@@ -9,11 +9,23 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
+    @IBOutlet weak var basePaylable: UILabel!
+    @IBOutlet weak var commissionPayTextField:UITextField!
+    @IBOutlet weak var totalPayLable: UILabel!
+    
+    let basePay = 500.00
+    
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        basePaylable.text = "$\(basePay)"
+        totalPayLable.text = " "
     }
-
-
+    
+    @IBAction func whenButtonPressed(_ sender: Any) {
+}
+    
+    
+    
 }
 
